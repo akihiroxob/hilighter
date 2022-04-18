@@ -1,0 +1,43 @@
+{
+    "name": "hilighter",
+    "version": "0.0.1",
+    "description": "a chrome extension",
+    "scripts": {
+        "build": "gulp webpack"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/akihiroxob/hilighter.git"
+    },
+    "author": "akihiro okayama",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/akihiroxob/hilighter/issues"
+    },
+    "homepage": "https://github.com/akihiroxob/hilighter#readme",
+    "dependencies": {
+        "dayjs": "^1.8.18",
+        "evernote": "^2.0.5"
+    },
+    "devDependencies": {
+        "@babel/core": "^7.7.7",
+        "@babel/preset-env": "^7.7.7",
+        "@babel/register": "^7.7.7",
+        "babel-loader": "^8.0.6",
+        "gulp": "^4.0.2",
+        "webpack": "^4.41.5",
+        "webpack-stream": "^5.2.1"
+    },
+    "babel": {
+        "presets": [
+            [
+                "@babel/preset-env",
+                {
+                    "targets": {
+                        "node": "current"
+                    }
+                }
+            ]
+        ]
+    }
+}
